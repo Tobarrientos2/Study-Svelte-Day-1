@@ -25,6 +25,13 @@ $: g_arr_arr = mWin(g_arr_txt);
             </button>
         {/each}
     </svelte:fragment>
+
+    <div slot="controls">
+        <button on:click={() => {
+            g_arr_txt = Array(9).fill('');
+            txt_i = '';
+        }} >Reset</button>
+    </div>
     </Board>
  
 </div>
